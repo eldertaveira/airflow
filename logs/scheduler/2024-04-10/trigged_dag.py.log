@@ -1,0 +1,175 @@
+[2024-04-10T13:22:28.638+0000] {processor.py:153} INFO - Started process (PID=3978) to work on /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:22:28.640+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/trigged_dag.py for tasks to queue
+[2024-04-10T13:22:28.642+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:22:28.642+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:22:28.671+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:22:28.664+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/trigged_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/trigged_dag.py", line 17, in <module>
+    trigged_rule = 'one_failed')
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 147, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to BashOperator (task_id: task3). Invalid arguments were:
+**kwargs: {'trigged_rule': 'one_failed'}
+[2024-04-10T13:22:28.672+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:22:28.714+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/trigged_dag.py took 0.083 seconds
+[2024-04-10T13:22:58.864+0000] {processor.py:153} INFO - Started process (PID=4004) to work on /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:22:58.866+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/trigged_dag.py for tasks to queue
+[2024-04-10T13:22:58.867+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:22:58.867+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:22:58.980+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:22:58.923+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/trigged_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/trigged_dag.py", line 17, in <module>
+    trigged_rule = 'one_failed')
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 147, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to BashOperator (task_id: task3). Invalid arguments were:
+**kwargs: {'trigged_rule': 'one_failed'}
+[2024-04-10T13:22:58.981+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:22:59.164+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/trigged_dag.py took 0.311 seconds
+[2024-04-10T13:23:29.552+0000] {processor.py:153} INFO - Started process (PID=4027) to work on /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:23:29.555+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/trigged_dag.py for tasks to queue
+[2024-04-10T13:23:29.557+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:23:29.557+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:23:29.589+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:23:29.583+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/trigged_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/trigged_dag.py", line 17, in <module>
+    trigged_rule = 'one_failed')
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 147, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to BashOperator (task_id: task3). Invalid arguments were:
+**kwargs: {'trigged_rule': 'one_failed'}
+[2024-04-10T13:23:29.590+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:23:29.642+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/trigged_dag.py took 0.097 seconds
+[2024-04-10T13:23:59.989+0000] {processor.py:153} INFO - Started process (PID=4046) to work on /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:23:59.991+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/trigged_dag.py for tasks to queue
+[2024-04-10T13:23:59.993+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:23:59.992+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:24:00.027+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:24:00.010+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/trigged_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/trigged_dag.py", line 17, in <module>
+    trigged_rule = 'one_failed')
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 147, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to BashOperator (task_id: task3). Invalid arguments were:
+**kwargs: {'trigged_rule': 'one_failed'}
+[2024-04-10T13:24:00.028+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:24:00.066+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/trigged_dag.py took 0.082 seconds
+[2024-04-10T13:24:30.128+0000] {processor.py:153} INFO - Started process (PID=4072) to work on /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:24:30.169+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/trigged_dag.py for tasks to queue
+[2024-04-10T13:24:30.171+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:24:30.170+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:24:30.496+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:24:30.386+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/trigged_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/trigged_dag.py", line 17, in <module>
+    trigged_rule = 'one_failed')
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 147, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to BashOperator (task_id: task3). Invalid arguments were:
+**kwargs: {'trigged_rule': 'one_failed'}
+[2024-04-10T13:24:30.500+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:24:31.126+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/trigged_dag.py took 1.010 seconds
+[2024-04-10T13:24:49.330+0000] {processor.py:153} INFO - Started process (PID=4084) to work on /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:24:49.335+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/trigged_dag.py for tasks to queue
+[2024-04-10T13:24:49.341+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:24:49.340+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:24:49.383+0000] {processor.py:753} INFO - DAG(s) dict_keys(['trigger_dag']) retrieved from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:24:49.965+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:24:49.965+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:trigger_dag
+[2024-04-10T13:24:50.001+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:24:50.001+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:trigger_dag
+[2024-04-10T13:24:50.030+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:24:50.030+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:trigger_dag
+[2024-04-10T13:24:50.031+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:24:50.031+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-04-10T13:24:50.073+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:24:50.073+0000] {dag.py:2711} INFO - Creating ORM DAG for trigger_dag
+[2024-04-10T13:24:50.106+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:24:50.106+0000] {dag.py:3441} INFO - Setting next_dagrun for trigger_dag to None, run_after=None
+[2024-04-10T13:24:50.152+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/trigged_dag.py took 0.841 seconds
+[2024-04-10T13:25:20.573+0000] {processor.py:153} INFO - Started process (PID=4102) to work on /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:25:20.576+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/trigged_dag.py for tasks to queue
+[2024-04-10T13:25:20.577+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:25:20.577+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:25:21.305+0000] {processor.py:753} INFO - DAG(s) dict_keys(['trigger_dag']) retrieved from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:25:21.876+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:25:21.875+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-04-10T13:25:22.034+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:25:22.031+0000] {dag.py:3441} INFO - Setting next_dagrun for trigger_dag to None, run_after=None
+[2024-04-10T13:25:22.111+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/trigged_dag.py took 1.550 seconds
+[2024-04-10T13:25:52.236+0000] {processor.py:153} INFO - Started process (PID=4130) to work on /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:25:52.245+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/trigged_dag.py for tasks to queue
+[2024-04-10T13:25:52.246+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:25:52.246+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:25:52.310+0000] {processor.py:753} INFO - DAG(s) dict_keys(['trigger_dag']) retrieved from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:25:52.382+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:25:52.382+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-04-10T13:25:52.473+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:25:52.472+0000] {dag.py:3441} INFO - Setting next_dagrun for trigger_dag to None, run_after=None
+[2024-04-10T13:25:52.524+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/trigged_dag.py took 0.298 seconds
+[2024-04-10T13:26:23.648+0000] {processor.py:153} INFO - Started process (PID=4145) to work on /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:26:23.652+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/trigged_dag.py for tasks to queue
+[2024-04-10T13:26:23.653+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:26:23.653+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:26:24.253+0000] {processor.py:753} INFO - DAG(s) dict_keys(['trigger_dag']) retrieved from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:26:24.956+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:26:24.955+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-04-10T13:26:25.045+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:26:25.044+0000] {dag.py:3441} INFO - Setting next_dagrun for trigger_dag to None, run_after=None
+[2024-04-10T13:26:25.126+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/trigged_dag.py took 1.493 seconds
+[2024-04-10T13:26:55.618+0000] {processor.py:153} INFO - Started process (PID=4169) to work on /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:26:55.621+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/trigged_dag.py for tasks to queue
+[2024-04-10T13:26:55.622+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:26:55.622+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:26:55.827+0000] {processor.py:753} INFO - DAG(s) dict_keys(['trigger_dag']) retrieved from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:26:56.238+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:26:56.237+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-04-10T13:26:56.358+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:26:56.358+0000] {dag.py:3441} INFO - Setting next_dagrun for trigger_dag to None, run_after=None
+[2024-04-10T13:26:56.474+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/trigged_dag.py took 0.867 seconds
+[2024-04-10T13:27:26.778+0000] {processor.py:153} INFO - Started process (PID=4187) to work on /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:27:26.781+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/trigged_dag.py for tasks to queue
+[2024-04-10T13:27:26.784+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:27:26.783+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:27:27.504+0000] {processor.py:753} INFO - DAG(s) dict_keys(['trigger_dag']) retrieved from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:27:29.495+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:27:29.465+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-04-10T13:27:30.260+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:27:30.238+0000] {dag.py:3441} INFO - Setting next_dagrun for trigger_dag to None, run_after=None
+[2024-04-10T13:27:31.377+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/trigged_dag.py took 4.614 seconds
+[2024-04-10T13:28:02.369+0000] {processor.py:153} INFO - Started process (PID=4215) to work on /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:28:02.371+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/trigged_dag.py for tasks to queue
+[2024-04-10T13:28:02.373+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:28:02.372+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:28:02.528+0000] {processor.py:753} INFO - DAG(s) dict_keys(['trigger_dag']) retrieved from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:28:02.789+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:28:02.788+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-04-10T13:28:02.916+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:28:02.915+0000] {dag.py:3441} INFO - Setting next_dagrun for trigger_dag to None, run_after=None
+[2024-04-10T13:28:02.997+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/trigged_dag.py took 0.641 seconds
+[2024-04-10T13:28:33.190+0000] {processor.py:153} INFO - Started process (PID=4230) to work on /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:28:33.204+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/trigged_dag.py for tasks to queue
+[2024-04-10T13:28:33.207+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:28:33.206+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:28:33.340+0000] {processor.py:753} INFO - DAG(s) dict_keys(['trigger_dag']) retrieved from /opt/airflow/dags/trigged_dag.py
+[2024-04-10T13:28:33.497+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:28:33.497+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2024-04-10T13:28:33.564+0000] {logging_mixin.py:137} INFO - [2024-04-10T13:28:33.564+0000] {dag.py:3441} INFO - Setting next_dagrun for trigger_dag to None, run_after=None
+[2024-04-10T13:28:33.622+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/trigged_dag.py took 0.447 seconds
